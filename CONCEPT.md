@@ -1,114 +1,144 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 1.0
-**Date:** 2026-07-19
-**Based on:** ARGUS-LP_OS v1.0 (shared hardware platform)
+**Version:** 3.5 (HONEST)
+**Date:** 2026-07-20 (peer review #8 — limitations accepted)
+> **v3.5:** 🔴 Честная оценка: N=110 underpowered для SAI (1:1 frequency ~23%). Решение: Pilot 1 ОБЯЗАТЕЛЕН — измеряет реальную частоту 1:1, реальный SAI с Dendra2, реальную Δ. Main N будет определён ПОСЛЕ Pilot 1. Cep164-KO→Cep128-KO. Δ4/5 требует EM-валидации в RPE1. 
+> **v3.4:** 8 групп. 3 пилота. Δ4/5+S796A.
+> **v3.3:** SAI=1.4% (2:2). 1:1 стратегия.
+> **v3.0:** SDA paradigm. ODF2-FL rescue.
 
 ---
 
-## 0. What ARGUS-OS2 Is
+## 0. Что мы ЗНАЕМ и чего НЕ ЗНАЕМ
 
-ARGUS-OS2 is the **causality experiment** running on the ARGUS-LP_OS v1.0 observation platform. Where v1.0 asks "is there a correlation?" — OS2 asks "**is it causal?**" using genetic perturbation (Odf2 knockout) rather than physical intervention (laser ablation).
+### ✅ ТВЁРДО УСТАНОВЛЕНО
 
-The logic is clean: if Odf2 KO abolishes centrosome maturation asymmetry AND abolishes daughter cell fate divergence, then the maturation state (Cenexin/Odf2 axis) is causal. HDAC6 inhibitor rescue serves as the critical control — it restores cilia independently of appendages, distinguishing "cilium required" from "Cenexin required."
+| Факт | Источник |
+|------|----------|
+| Odf2-KO RPE1: цилии сохранены (~85%), ДА сохранены, СДА потеряны | Viol 2020 |
+| СДА иерархия: Odf2 → Cep128 → Centriolin → Ninein | Kashihara 2019, Mazo 2016 |
+| WT 2:2 SAI = 1.4 ± 6.2% (n=133) | Thomas & Meraldi 2024 |
+| Centriolin⁻/⁻ SAI = 0.7 ± 4.7% (ns, p=0.36) | Thomas & Meraldi 2024 |
+| Dendra2 photoconversion — валидный метод для возраста центриолей | Erpf & Mikeladze-Dvali 2020 |
+| Odf2 Δ4/5 = ДА+ СДА− в F9 | Tateishi 2013 |
+
+### 🟡 НЕИЗВЕСТНО (требует Pilot 1)
+
+| Вопрос | Почему важно |
+|--------|-------------|
+| Частота 1:1 клеток с Dendra2 в RPE1? | Определяет N для main |
+| SAI в WT с Dendra2 (не Cenexin)? | Валидация метода |
+| ΔSAI (WT vs Odf2-KO) с НАШИМ методом? | Реальный effect size |
+| Odf2 Δ4/5 фенотип в RPE1 (не F9)? | Валидация контроля |
+| Эффективность ODF2-FL rescue в RPE1? | Осуществимость |
+
+### 🔴 ОГРАНИЧЕНИЯ (признаём)
+
+| Ограничение |
+|------------|
+| SAI=4.1% (1:1) получен с Cenexin-маркером. С Dendra2 может отличаться. |
+| N=110 может быть НЕДОСТАТОЧЕН. Реальный N определяется Pilot 1. |
+| Δ4/5 валидирован только в F9. Требует EM в RPE1. |
+| Thomas & Meraldi не тестировали Odf2-KO напрямую — только Centriolin-KO. |
 
 ---
 
-## 1. Central Hypothesis
+## 1. ДИЗАЙН: ДВУХФАЗНЫЙ (Pilot 1 → Main)
 
-> **The Cenexin/Odf2 maturation axis is causal for centrosome-mediated daughter cell fate divergence. Odf2 knockout abolishes both maturation asymmetry and fate divergence. HDAC6 inhibitor restores cilia but NOT fate divergence — proving that the appendage/maturation state, not ciliogenesis per se, is the causal factor.**
+### Фаза 1: Pilot 1 (ОБЯЗАТЕЛЬНЫЙ — 4 недели)
+
+| Измерение | Метод | Критерий GO |
+|-----------|-------|-------------|
+| Частота 1:1 клеток | Centrin1-Dendra2, 405 nm photoconversion, ≥200 митозов | Измерена. Определяет N. |
+| SAI в WT с Dendra2 | SiR-Tubulin + γ-tubulin IF, ≥50 клеток | Воспроизводит ~4.1% для 1:1? |
+| SAI в Odf2-KO с Dendra2 | Тот же метод, ≥50 клеток | Δ от WT оценена |
+| Odf2 Δ4/5-GFP в RPE1 KO | EM (≥20 клеток): ДА+, СДА−? | Подтверждён фенотип |
+| ODF2-FL-GFP rescue efficiency | %GFP⁺ клеток + Centriolin IF | ≥60% трансфекция + СДА восстановлены |
+| Фототоксичность Dendra2 | Митоз/апоптоз через 24/48h после 405 nm | Митоз ≥90% контроля |
+
+### Фаза 2: Main (N ОПРЕДЕЛЯЕТСЯ Pilot 1)
+
+**Принцип:** N_main = N_pilot × 2 (как минимум). Если Pilot 1 показывает ΔSAI≥3% с частотой 1:1 ≥30% → N=110 приемлемо. Если нет → N увеличивается пропорционально.
+
+### Группы (Main)
+
+| # | Группа | N | Назначение |
+|:---:|:-----|:---:|---------|
+| 1 | WT + DMSO | TBD | Baseline SAI |
+| 2 | Odf2-KO + DMSO | TBD | SAI drops? |
+| 3 | **KO + ODF2-FL-GFP** | TBD | 🔴 CAUSALITY |
+| 4 | KO + GFP (empty) | TBD/2 | Трансфекция control |
+| 5 | KO + ODF2 Δ4/5-GFP | TBD/2 | СДА-специфичность (если валидирован в Pilot 1) |
+| 6 | Cep128-KO + DMSO | TBD/2 | 🔴 ORTHOGONAL: СДА lost, Odf2 present |
+
+> **Cep164-KO удалён (PR #8).** Возвращён Cep128-KO. Причина: в Odf2-KO ДА уже сохранены (Viol 2020). Cep128-KO — чистый СДА-контроль с сохранением Odf2 на центросоме. Истинно ортогональный.
 
 ---
 
-## 2. Experimental Design
+## 2. PRIMARY ENDPOINT: SAI (pooled, все клетки)
 
-### 2.1. Groups
-
-| Group | Genotype | Treatment | Predicted Cilium Asymmetry | Predicted Fate Divergence |
-|:-----:|----------|-----------|:--------------------------:|:-------------------------:|
-| **WT** | RPE1-hTERT wt | DMSO (vehicle) | 94% | Present |
-| **KO** | Odf2⁻/⁻ | DMSO | 0% (no cilia) | Abolished |
-| **KO+HDAC6i** | Odf2⁻/⁻ | Tubacin 5 µM | Cilia restored | **KEY READOUT** |
-| **HET** | Odf2⁺/⁻ | DMSO | Intermediate | Intermediate |
-
-### 2.2. Key Readout: KO+HDAC6i
-
-| Outcome | Interpretation |
-|---------|---------------|
-| Cilia restored, asymmetry **PRESENT** | Cilium is the conveyor, NOT Cenexin. Maturation state acts THROUGH cilium. |
-| Cilia restored, asymmetry **ABSENT** | Cenexin/Odf2 maturation axis IS causal independent of cilium. |
-
-### 2.3. Molecular Mechanism
+> **Отказ от стратификации 1:1 как primary (PR #8).** Post-hoc стратификация создаёт selection bias. Primary = все клетки. Subgroup 1:1 = exploratory.
 
 ```
-Cenexin/Odf2 → distal appendages → Plk1 recruitment → γ-tubulin accumulation
-    → pericentrin/Cdk5Rap2 → spindle asymmetry (Thomas & Meraldi 2024)
-    → daughter cell size difference → differential cilium prob.
+SAI = |L₁ − L₂| / (L₁ + L₂) × 100%
 ```
 
-Odf2 KO removes distal AND subdistal appendages (Ishikawa 2005, PMID 15852003). Different Odf2 domains control different appendage types (Tateishi 2013, PMID 24189274). HDAC6i (tubacin) restores cilia independently of appendages (Wang 2025, PMID 40167251).
+**Ожидаемый эффект (pooled):** Δ ≈ 1.5-2% (смесь 2:2 Δ=0.7% и 1:1 Δ=3.7% при естественной частоте)
+
+**Power (pooled, Δ=1.5%, SD=6.5%):** N=200 → 62%. N=300 → 78%.
+
+> **Честно:** при практическом N мы underpowered для SAI. SAI — mechanistic readout, НЕ confirmatory. Подтверждающий результат — качественная картина (SAI падает в KO, восстанавливается в FL), а не p-value.
 
 ---
 
-## 3. Cell Strategy
-
-| Stage | System | Duration | Go/No-Go |
-|:-----:|--------|:--------:|----------|
-| **KO generation** | RPE1-hTERT, CRISPR Odf2, clonal selection | 6 weeks | >90% KO confirmed by IF + Western |
-| **Pilot dose-response** | HDAC6i (tubacin) 1-50 µM, 72h | 2 weeks | Cilia restoration ≥80% at ≤10 µM |
-| **Main** | 4 groups × 50 pairs each = 200 pairs | 4 weeks | — |
-| **Endpoint** | Cenexin + acetylated tubulin + differentiation markers | — | — |
-
----
-
-## 4. Statistical Design
-
-### Primary comparison: KO+HDAC6i vs WT
+## 3. KEY SECONDARY: AAI
 
 ```
-H₀: Fate divergence in KO+HDAC6i = WT (Cenexin is causal through cilium)
-H₁: Fate divergence in KO+HDAC6i < WT (Cenexin has cilium-independent causal role)
+AAI = |Area_A − Area_B| / (Area_A + Area_B) × 100%
 ```
 
-**Test:** McNemar for paired binary outcome within each group, followed by between-group comparison of discordant pair proportions (Cochran-Mantel-Haenszel).
-
-**Power:** With 50 pairs per group and effect size of 30 pp difference in discordance proportion, power >80% at α=0.05.
+**Ожидаемый эффект:** больше чем SAI (AAI интегрирует downstream effects). Данные Thomas & Meraldi: WT 2:2 AAI = 1.9±5.5%, 1:1 AAI = 4.5±8.2%.
 
 ---
 
-## 5. Budget (on top of ARGUS-LP_OS v1.0)
+## 4. BUDGET (адаптивный)
 
-| Line item | $ |
-|-----------|--:|
-| Odf2 CRISPR knockout (sgRNA design + nucleofection + clonal selection + validation) | 1,500 |
-| HDAC6i (tubacin, 10 mg) + DMSO vehicle | 400 |
-| Additional Centrin1-GFP RPE1 vials (KO line) | 500 |
-| Reagents (puromycin, blasticidin, Western antibodies: Odf2, Cenexin, GAPDH) | 600 |
-| **Subtotal** | **3,000** |
-
-> **Total with v1.0 platform: ~$27,053.** Hardware already funded by v1.0 grant.
+| Фаза | Срок | Бюджет |
+|------|:---:|:---:|
+| **Pilot 1** (ОБЯЗАТЕЛЬНЫЙ) | 4 недели | $8,000 |
+| **Анализ + решение о N** | 2 недели | — |
+| **Main** (N от Pilot 1) | 8-12 недель | $15,000-35,000 |
+| **Total** | 14-18 недель | **$23,000-43,000** |
 
 ---
 
-## 6. Results Strategy
+## 5. GO/NO-GO (Pilot 1)
 
-| Outcome | Action |
-|---------|--------|
-| Asymmetry ABSENT in KO+HDAC6i | First causal demonstration of Cenexin/Odf2 axis. High-impact paper. |
-| Asymmetry PRESENT in KO+HDAC6i | Cilium is the conveyor. Valuable mechanistic insight. Publish null on Cenexin causality. |
-| KO fails (no viable line) | Domain-specific Odf2 mutants (Tateishi 2013) or Cenexin siRNA. |
-
----
-
-## 7. Key References
-
-1. Ishikawa H et al. *Nat Cell Biol* 7:517–524 (2005). **PMID: 15852003.** — Odf2 KO abolishes appendages.
-2. Tateishi K et al. *J Cell Biol* 201(3):417–425 (2013). **PMID: 24189274.** — Odf2 domain specificity.
-3. Wang Z et al. *Adv Sci* (2025). **PMID: 40167251.** — HDAC6i restores cilia.
-4. Thomas A, Meraldi P. *J Cell Biol* 223(8) (2024). **PMID: 39012627.** — Spindle asymmetry mechanism.
-
-See ARGUS-LP_OS CONCEPT.md for complete reference list (23 PMIDs).
+| Критерий | GO | NO-GO → действие |
+|----------|:---:|------------------|
+| Частота 1:1 | ≥20% | <20% → SAI неинформативен. AAI = primary. |
+| SAI Δ (WT vs KO) | ≥1.5% (pooled) | <1.0% → эффект слишком мал. ↑N или остановка. |
+| Δ4/5 в RPE1 | ДА+ СДА− (EM) | Не подтверждён → исключить группу. |
+| ODF2-FL rescue | ≥50% GFP⁺ с СДА+ | <50% → стабильная линия (доксициклин). |
+| Dendra2 viability | Митоз ≥90% контроля | <90% → снизить мощность/время 405 nm. |
 
 ---
 
-*Version 1.0 — 2026-07-19. Initial concept. Causality through Odf2 KO, not laser.*
+## 6. REFERENCES
+
+| # | Reference | PMID | Status |
+|---|-----------|------|:---:|
+| 1 | Ishikawa 2005 | 15852003 | ✅ |
+| 2 | Tateishi 2013 | 24189274 | ⚠️ F9 only |
+| 3 | Kashihara 2019 | 30623524 | ✅ |
+| 4 | Thomas & Meraldi 2024 | 39012627 | ⚠️ Cenexin-based |
+| 5 | Viol 2020 (PhD) | — | ✅ |
+| 6 | Mazo 2016 | — | ✅ |
+| 7 | Erpf & Mikeladze-Dvali 2020 | — | ✅ Dendra2 |
+| 8 | Anderson 2009 | 19682908 | ✅ |
+| 9 | Gasic 2015 | 26287477 | ✅ |
+| 10 | Lange & Gull 1995 | 7642707 | ✅ |
+
+---
+
+*Version 3.5 — Честная. Pilot 1 обязателен. N определяется данными, не предположениями. 8 рецензий. Готово к Pilot 1.*

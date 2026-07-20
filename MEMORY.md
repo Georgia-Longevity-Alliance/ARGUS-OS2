@@ -1,19 +1,24 @@
 # MEMORY — ARGUS-OS2
 
-## 2026-07-19 — Project Created
+## 🔴 v2.0 — Peer Review Incorporated (2026-07-20)
 
-- **Decision:** ARGUS-OS2 separated from ARGUS-LP_OS as standalone project
-- **Rationale:** v1.0 (observation), v2.0 (causality/Odf2 KO), v3.0 (ablation) — three separate grants, three separate projects
-- **Naming:** ARGUS-OS2 = v2.0 platform version. Previously called "v1.5" and "ARGUS-OS1.5" — renamed for clean integer versioning
-- **Hardware:** Inherits all hardware from ARGUS-LP_OS v1.0. No new hardware. Reagents only.
-- **Budget:** +$3,000 (reagents) on top of v1.0 platform
+> External peer review received and incorporated into CONCEPT v2.0. 8 weak spots identified and addressed.
 
-## Relationship
+### Key Changes:
+1. ✅ **HET group removed** — no literature basis for Odf2 dosage-dependence. Resources → increased N.
+2. ✅ **N increased 50→75** — Thomas & Meraldi effect size (AAI ~3-4%) requires larger N.
+3. ✅ **WT+tubacin control added** — rules out tubacin effects on spindle independent of Odf2.
+4. ✅ **Primary endpoint: AAI** — daughter cell area asymmetry, directly from Thomas & Meraldi.
+5. ✅ **gRNA domain coverage verified** — exons 3-5 cover critical domain aa 188-806.
+6. ✅ **Wang 2025 corrected** — it's a REVIEW, NOT primary data. HDAC6i in Odf2-KO = untested assumption.
+7. ✅ **Odf2=Cenexin corrected** — same protein, different names. Odf2 = gene, Cenexin = protein.
+8. ✅ **Fallback plans expanded** — ACY-1215, taxol, Cep128-KO, Centriolin-KO.
 
-```
-ARGUS-LP_OS (v1.0) → observation → $24,053
-ARGUS-OS2 (v2.0)   → causality   → +$3,000
-ARGUS-OS3 (v3.0)   → ablation    → $40,600
-```
+### CRITICAL GATE:
+🔴 **Pilot 1: HDAC6i dose-response in Odf2-KO.** If tubacin does NOT restore cilia at ≥80% with viability ≥90% → entire design fails. Alternative: ACY-1215, taxol, or genetic rescue.
 
-Each is a separate project with its own core files, grants, and timeline.
+---
+
+## v1.0 — Initial Concept (2026-07-19)
+
+> First draft. Odf2 KO + HDAC6i rescue = causal test for Cenexin/Odf2 axis. Based on ARGUS-OS1 platform.
