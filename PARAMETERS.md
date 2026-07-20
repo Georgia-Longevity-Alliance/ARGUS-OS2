@@ -5,18 +5,18 @@
 
 ## Hypothesis
 
-Spindle orientation pedigreey of centriole divisions (∥/⟂ sequence) predicts cell fate. Convergence: different spindle orientation pedigreeies → same fate.
+Spindle pedigreey of centriole divisions (∥/⟂ sequence) predicts cell fate. Convergence: different spindle pedigreeies → same fate.
 
 ## Design
 
 | Phase | System | N | Endpoint |
 |:---:|--------|:---:|----------|
 | 1 | C. elegans | 100 cells | Known lineage → fate |
-| 2 | RPE1 (data from OS1) | 200+ cells | Spindle orientation pedigreey → Arl13B |
+| 2 | RPE1 (data from OS1) | 200+ cells | Spindle pedigreey → Arl13B |
 
 ## Main Experiment
 
-4 centrioles, same age (3 divisions), different spindle orientation pedigreeies. A=C≠B=D = proof.
+4 centrioles, same age (3 divisions), different spindle pedigreeies. A=C≠B=D = proof.
 
 ## Budget
 
