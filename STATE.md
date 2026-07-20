@@ -1,6 +1,6 @@
 # STATE — ARGUS-OS2
 
-**Status:** 🟢 v4.1 (CLEAN) — Все молекулярные маркеры убраны. Только траектория + судьба. $13K. Данные от OS1.
+**Status:** 🟢 v4.1 (CLEAN) — Все молекулярные маркеры убраны. Только spindle orientation pedigree + судьба. $13K. Данные от OS1.
 
 ## Evolution
 
