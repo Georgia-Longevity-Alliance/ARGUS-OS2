@@ -1,3 +1,5 @@
+All causality of differentiation impossible without centriole.
+
 # ARGUS-OS2
 
 **Centriole pedigree → дифференцировка.** Проверка 2 предсказаний.
