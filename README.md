@@ -9,3 +9,4 @@ All causality of differentiation impossible without centriole.
 
 Храповик. Обнуление счётчика. iPSC ≠ ESC.
 Данные от OS1. → OS3.
+Stochastic centriole segregation (Gönczy 2023, 36988082) strengthens pedigree hypothesis.
