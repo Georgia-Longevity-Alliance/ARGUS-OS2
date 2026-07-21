@@ -233,3 +233,13 @@ Centriole pedigreeии разные. Судьба — одинаковая.
 ---
 
 *Version 4.0 — Полная смена парадигмы. От молекулярной причинности к информационному предсказанию. Jaba Tqemaladze, 2026-07-21.*
+
+---
+
+## Reproducibility & Quality
+
+**Power analysis:** N≈40 sister-cell pairs for OR≥1.5 (α=0.05, β=0.2). Pilot quantifies available pairs from OS1 data.
+**Blinding:** analyst scoring centriole fate blinded to pedigree.
+**Pre-registration:** OSF before data collection.
+**Reproducibility:** all code + data on GitHub + Zenodo (CC-BY).
+**Limitations:** (1) C. elegans-specific — cross-species validation needed. (2) Sister-cell pairs rare (~5% of divisions). (3) Stochasticity confirmed for 4-cell stage + ABpr lineage only. (4) Multicollinearity risk between pedigree and cell_type — VIF>5 triggers Plan B.
