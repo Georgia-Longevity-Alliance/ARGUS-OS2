@@ -243,3 +243,40 @@ Centriole pedigreeии разные. Судьба — одинаковая.
 **Pre-registration:** OSF before data collection.
 **Reproducibility:** all code + data on GitHub + Zenodo (CC-BY).
 **Limitations:** (1) C. elegans-specific — cross-species validation needed. (2) Sister-cell pairs rare (~5% of divisions). (3) Stochasticity confirmed for 4-cell stage + ABpr lineage only. (4) Multicollinearity risk between pedigree and cell_type — VIF>5 triggers Plan B.
+
+---
+
+## Budget
+
+ARGUS V7 (OS1 platform, already built): $0
+V7→V8 upgrade (light-sheet, fs-laser, tweezers, manipulators, Jetson AGX): ~$141,000
+**Total OS2 hardware upgrade: ~$141,000**
+
+## Timeline
+
+| Phase | Duration |
+|-------|----------|
+| OS1 data collection | Complete (from OS1) |
+| OS2 analysis setup | 1 month |
+| Sister-cell pair analysis | 3 months |
+| Convergence testing | 2 months |
+| Write-up | 2 months |
+| **Total** | **~8 months** |
+
+## Quality Controls
+
+**Power analysis:** N≈40 sister-cell pairs (OR≥1.5, α=0.05, β=0.2). OS1 provides data.
+**Blinding:** analyst blinded to pedigree during fate scoring.
+**Pre-registration:** OSF before analysis begins.
+**Negative control:** OS1 dark control embryos (lasers OFF).
+**Cross-strain validation:** N2 + CB4856 if available.
+**VIF threshold:** >5 triggers Plan B (sister-cell only, no population model).
+**Reproducibility:** all code + data on GitHub + Zenodo (CC-BY).
+
+## Key References
+
+| # | Reference | PMID |
+|---|-----------|------|
+| 10 | Coffman et al. (2016) — MT asymmetry | 27733624 |
+| 11 | Croisier et al. (2025) — EM centrioles | 40475707 |
+| 12 | Kalbfuss & Gönczy (2023) — elimination review | 37963546 |
