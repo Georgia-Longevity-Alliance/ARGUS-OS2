@@ -139,15 +139,14 @@ After Phase 1 (C. elegans):
 
 ---
 
-## 5. Budget
 
-| Phase | System | Duration | Budget |
-|-------|--------|:---:|:---:|
-| 1: C. elegans | Embryo time-lapse + analysis | 8 weeks | $12,000 |
-| 2: RPE1 | OS1 data analysis | 12 weeks | $25,000 |
-| **Total** | | **20 weeks** | **$52,000 (realistic: includes confocal access, automated focus, ML analysis)** |
 
----
+
+
+
+
+
+
 
 ## 4a. Age-Pedigree Separation Strategy
 Age and pedigree are correlated (older centrioles have longer pedigrees). To separate: (a) match centrioles by division count, compare within same-age groups; (b) include age as covariate in conditional entropy calculation; (c) use partial mutual information I(pedigree; fate | age) as primary metric.
@@ -186,3 +185,16 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 ---
 
 *Version 15.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+
+### Salary Breakdown
+
+| Item | Amount |
+|------|:---:|
+| PI (25% FTE, 20 weeks) | $15,000 |
+| ML/Data analyst (50% FTE, 20 weeks) | $20,000 |
+| C. elegans reagents + microscopy | $12,000 |
+| Compute + storage | $3,000 |
+| Contingency | $2,000 |
+| **Total** | **$52,000** |
+
+> OS2 is a computational analysis project using existing OS1 data. No new microscope hardware required.
