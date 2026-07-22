@@ -194,12 +194,13 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 
 | Item | Amount |
 |------|:---:|
-| PI (25% FTE, 20 weeks) | $15,000 |
-| ML/Data analyst (50% FTE, 20 weeks) | $20,000 |
-| C. elegans reagents + microscopy | $12,000 |
-| Compute + storage | $3,000 |
-| Contingency | $2,000 |
-| **Total** | **$52,000** |
+| PI (25% FTE, 20 weeks) | $25,000 |
+| ML/Data analyst (50% FTE, 20 weeks) | $40,000 |
+| C. elegans reagents + microscopy | $20,000 |
+| Compute + storage | $5,000 |
+| Contingency (10%) | $10,000 |
+| Conference travel + OA fees | $5,000 |
+| **Total** | **$105,000** |
 
 > OS2 is a computational analysis project using existing OS1 data. No new microscope hardware required.
 
@@ -292,7 +293,8 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Reagents (iron-alum, haematoxylin, Bouin's) | $2,000 |
 | Microscopy time (brightfield + fluorescence overlay) | $5,000 |
 | Personnel (histology + analysis) | $6,000 |
-| Contingency | $2,000 |
+| Contingency (10%) | $10,000 |
+| Conference travel + OA fees | $5,000 |
 
 ### Updated Full Budget
 
@@ -325,7 +327,8 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Antibodies (Centrin, γ-tubulin, SAS-4) | $8,000 |
 | Confocal microscopy time | $10,000 |
 | Personnel | $5,000 |
-| Contingency | $2,000 |
+| Contingency (10%) | $10,000 |
+| Conference travel + OA fees | $5,000 |
 
 > **Verdict on RITE:** Defer to OS3 or separate project. For OS2, use established markers + comparative framework without genetic engineering.
 
