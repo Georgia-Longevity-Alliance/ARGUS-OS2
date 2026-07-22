@@ -198,3 +198,41 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 | **Total** | **$52,000** |
 
 > OS2 is a computational analysis project using existing OS1 data. No new microscope hardware required.
+
+---
+
+## 6. Enrichment Experiments (Optional, +$85K)
+
+These experiments transform OS2 from pure correlation analysis to mechanistic causality testing.
+
+### E1: Wnt Perturbation — Change Pedigree, Measure Fate ($25K)
+**Rationale:** Bei et al. (2002) showed Wnt/SRC-1 controls cleavage orientation in C. elegans. If we perturb Wnt signaling (RNAi or temperature-sensitive mutants), we CHANGE the pedigree WITHOUT changing cell position. If fate follows the NEW pedigree → causality supported.
+- **Strains:** Wnt pathway mutants (mom-2, wrm-1) or RNAi
+- **N:** 20 embryos per condition × 3 conditions = 60 embryos
+- **Duration:** 4 weeks
+- **Budget:** $25,000
+
+### E2: Centriole Laser Ablation — Remove One Centriole, Track Fate ($35K)
+**Rationale:** Ablate one centrosome at 2-cell stage. The daughter cell inheriting the remaining centrosome has a FORCED pedigree (no choice in orientation). Compare its fate to unablated controls.
+- **Setup:** 405nm pulsed laser on spinning disk
+- **N:** 30 embryos
+- **Duration:** 6 weeks
+- **Budget:** $35,000
+
+### E3: Ninein-GFP in RPE1 — Direct Mother Centriole Marker ($25K)
+**Rationale:** Barandun et al. (2025, PMID 39764850) showed ninein marks the mother centriole and its knockout randomizes CD8+ T-cell fate. Ninein-GFP in RPE1 enables DIRECT identification of mother vs daughter centriole without AI tracking. Tests whether mother centriole inheritance predicts cilium formation timing.
+- **Cell line:** RPE1 Ninein-GFP + Centrin1-mCherry
+- **N:** 500 cells
+- **Duration:** 6 weeks
+- **Budget:** $25,000
+
+### Budget with Enrichment
+
+| Component | Base | +E1 | +E2 | +E3 | Full |
+|-----------|:---:|:---:|:---:|:---:|:---:|
+| Personnel | $35K | +$10K | +$15K | +$10K | $70K |
+| Reagents/Equipment | $15K | +$12K | +$18K | +$12K | $57K |
+| Contingency | $2K | +$3K | +$2K | +$3K | $10K |
+| **Total** | **$52K** | **$25K** | **$35K** | **$25K** | **$137K** |
+
+> Full package: $137K — transforms OS2 from correlation to mechanism. E1+E2 recommended minimum ($112K).
