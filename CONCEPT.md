@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 10.0
+**Version:** 11.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -22,6 +22,7 @@ The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), no
 
 ### 1.1. Principle
 **Caveat:** In C. elegans, division orientation is determined by cell position in the morphogenetic field (Sulston 1983). Pedigree IS therefore a position marker — not an independent variable. Correlation between pedigree and fate is EXPECTED trivially. The non-trivial question: does pedigree predict fate BETTER than position alone? This is tested by comparing cells at similar positions but with different pedigrees (sister cells at asymmetric divisions).
+**Position control strategy:** compare sister cells from asymmetric divisions — identical position, identical mother, identical age, DIFFERENT pedigrees (one daughter gets old centriole, one gets new). This is the only comparison where pedigree is the sole systematic difference. N = all asymmetric divisions in 100-embryo dataset from OS1.
 
 In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
@@ -154,6 +155,9 @@ Age and pedigree are correlated (older centrioles have longer pedigrees). To sep
 ## 5a. OS1 Data Quality Criteria
 Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) phototoxicity score <10% division rate drop. Exclusion: abnormal cell behavior, incomplete lineage.
 
+## 5c. Limitation: Correlation ≠ Causality
+Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not causality. Pedigree may be a marker of position (which REALLY determines fate). OS3 (centriole transplantation) is required to test causality. This is explicitly a Phase 1 predictive study.
+
 ## 5b. Alternative Hypothesis
 **H₀_alt:** Centriole pedigree is a MARKER of cell fate (determined by position/morphogens), not a CAUSE. If pedigree predicts fate but experimental perturbation of pedigree does not change fate → centriole is a marker, not a carrier.
 **Test:** OS3 (centriole transplantation) — if transplanting a "bad pedigree" centriole into a "good fate" cell changes fate → causality proven. If not → centriole is a correlated marker.
@@ -173,9 +177,10 @@ Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) photo
 | 9 | Coffman et al. (2016) — MT asymmetry C. elegans | 27733624 |
 | 10 | Croisier et al. (2025) — EM centrioles in rectal cells | 40475707 |
 | 11 | Januschke et al. (2011) — Drosophila NB centrosome | 21407209 |
+| 14 | Bei et al. (2002) — SRC-1 + Wnt control cleavage orientation in C. elegans, Dev Cell | 12110172 |
 | 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
 | 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
 
 ---
 
-*Version 10.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 11.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
