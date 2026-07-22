@@ -150,6 +150,7 @@ After Phase 1 (C. elegans):
 
 ## 4a. Age-Pedigree Separation Strategy
 Age and pedigree are correlated (older centrioles have longer pedigrees). To separate: (a) match centrioles by division count, compare within same-age groups; (b) include age as covariate in conditional entropy calculation; (c) use partial mutual information I(pedigree; fate | age) as primary metric.
+**Cell position tracking:** XYZ coordinates of cell centroid recorded at each timepoint. Included as covariate: I(pedigree; fate | age, position). This addresses the "pedigree = position marker" critique head-on./
 
 ## 5a. OS1 Data Quality Criteria
 Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) phototoxicity score <10% division rate drop. Exclusion: abnormal cell behavior, incomplete lineage.
