@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 14.0
+**Version:** 15.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -185,4 +185,4 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 
 ---
 
-*Version 14.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 15.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
