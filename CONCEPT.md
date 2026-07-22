@@ -236,3 +236,35 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | **Total** | **$52K** | **$25K** | **$35K** | **$25K** | **$137K** |
 
 > Full package: $137K — transforms OS2 from correlation to mechanism. E1+E2 recommended minimum ($112K).
+
+### E4: Comparative Analysis — C. elegans vs Drosophila vs RPE1 ($40K)
+**Rationale:** Test whether pedigree→fate principle is universal or lineage-specific. Three systems with different centriole biology:
+- **C. elegans:** evolutionarily reduced centrioles, 88% elimination, invariant lineage
+- **Drosophila NB:** canonical centrioles, asymmetric inheritance (daughter→stem, mother→differentiate)
+- **RPE1:** mammalian epithelial, no elimination, cilium as fate readout
+
+**Comparison matrix:**
+| Feature | C. elegans | Drosophila NB | RPE1 |
+|---------|:---:|:---:|:---:|
+| Centriole structure | Singlets (reduced) | Triplets (canonical) | Triplets (canonical) |
+| Pedigree→fate known? | ❌ Unknown | ✅ Januschke 2011 | ❌ Unknown |
+| Lineage map | ✅ Complete (Sulston) | ❌ Stochastic | ❌ Stochastic |
+| Elimination | 88% (Kalbfuss) | None | None |
+| Causality test | Wnt perturbation | Laser ablation | Ninein-GFP |
+| Budget | $37K (base+E1) | $35K (E2 adapted) | $25K (E3) |
+
+**Comparative analysis plan:**
+1. Compute I(pedigree; fate) in all 3 systems using harmonized pipeline
+2. Meta-analysis: is the effect size conserved across species?
+3. If I > 0.3 in all 3 → universal principle. If only in Drosophila → lineage-specific.
+
+**Duration:** 8 weeks | **Budget:** $40,000 (includes Drosophila facility access + collaborative agreement)
+
+### Full Enrichment Budget Summary
+
+| Component | Base OS2 | +E1 | +E2 | +E3 | +E4 | **Full** |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|
+| Personnel | $35K | +$10K | +$15K | +$10K | +$18K | **$88K** |
+| Reagents/Equip | $15K | +$12K | +$18K | +$12K | +$18K | **$75K** |
+| Contingency | $2K | +$3K | +$2K | +$3K | +$4K | **$14K** |
+| **Total** | **$52K** | **$25K** | **$35K** | **$25K** | **$40K** | **$177K** |
