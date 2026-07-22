@@ -186,6 +186,7 @@ fate ~ pedigree_score + age + position + (1|cell_lineage)
 **Intermediate analysis:** After 500 cells. If BF<3 → continue to 1000. If BF>10 → stop early.
 
 ## 14. Limitations
+7. RPE1 divisions are predominantly symmetric — unlike CD8+ T-cells where Barandun (2025) showed directional mother centriole inheritance. If mother centriole is randomly distributed in RPE1, pedigree effect may be attenuated. Pre-experiment validation: measure mother centriole inheritance bias in RPE1 Ninein-GFP (first 100 divisions). If bias <60:40 → pedigree signal may be undetectable.
 
 1. RPE1 is immortalized — not embryonic. Cilium formation is a surrogate for "fate."
 2. C. elegans pilot is for method validation only — not statistically powered.
