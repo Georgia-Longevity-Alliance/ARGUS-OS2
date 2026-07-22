@@ -1,282 +1,160 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 4.0 (НОВАЯ КОНЦЕПЦИЯ)
-**Date:** 2026-07-21
-**Idea:** Jaba Tqemaladze — Центриоль как материальный носитель пространственной lineage-памяти
-> **v4.0:** 🔴 Полная смена концепции. Odf2-KO (9 рецензий, тупик) заменён на проверку гипотезы «центриоль как lineage-память». Никаких нокаутов. Только наблюдение и классификация.
-> **v3.0-3.5:** Odf2-KO + SDA paradigm. 9 peer reviews. Приостановлен.
-> **v1.0-2.0:** Odf2 KO + HDAC6i rescue.
+**Version:** 5.0
+**Date:** 2026-07-22
+**Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
 ---
 
-## 0. Что такое ARGUS-OS2
+## 0. What is ARGUS-OS2
 
-ARGUS-OS2 проверяет гипотезу: **centriole pedigree определяет дифференцировку в развитии делений.**
+ARGUS-OS2 tests the hypothesis: **centriole pedigree predicts differentiation fate convergence.**
 
-> **Материнская/дочерняя центриоль идентифицируется по НЕПРЕРЫВНОМУ AI-ТРЕКИНГУ (24/7), а не по молекулярным маркерам.** Данные собирает ARGUS-OS1. OS2 анализирует: предсказывает ли centriole pedigree судьбу?
+The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), not by molecular markers. Data collected by ARGUS-OS1. OS2 analyzes: does centriole pedigree predict cell fate?
 
-> **Если центриоль прошла путь «верх → право → зад», клетка может стать нейроном. Если «низ → лево → перед» — кожей. Centriole pedigreeия предсказывает судьбу. Механизм записи (структурный или иной) — за рамками данного проекта.**
+**Principle:** If a centriole passed through "up→right→posterior", the cell may become a neuron. If "down→left→anterior" — skin. Centriole pedigree predicts fate. The recording mechanism (structural or otherwise) is beyond this project's scope.
 
 ---
 
 ## 1. Central Hypothesis
 
-> **Пространственная centriole pedigree клетки в дереве делений (последовательность ориентаций каждого митоза) предсказывает её судьбу. Центриоль — кандидат на роль материального носителя этой информации у млекопитающих.**
+**Spatial centriole pedigree (sequence of division orientations) predicts cell fate. The centriole is a candidate material carrier of this information.**
 
-### 1.1. Принцип (универсальный)
+### 1.1. Principle
 
-В эмбриогенезе положение клетки определяет её судьбу:
-- Клетка наверху → эктодерма
-- Клетка внизу → энтодерма
-- Клетка слева → левый орган
+In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
-Пространственная centriole pedigree делений (последовательность «верх→право→зад→...») — это и есть запись того где клетка была. Если эта информация где-то хранится — судьбу можно предсказать.
+### 1.2. C. elegans — Principle Visualization
 
-### 1.2. C. elegans — визуализация принципа
+C. elegans: complete cell lineage known (Sulston & Horvitz 1977). Centriole pedigree of each cell → its fate. Embryo is transparent. All divisions visible.
 
-C. elegans: полная клеточная линия известна (Sulston & Horvitz 1977). Centriole pedigreeия каждой клетки → её судьба. Эмбрион прозрачен. Все деления видны.
+**C. elegans is used NOT to prove centriole = memory, but as VISUALIZATION:** show that centriole pedigree correlates with fate in a system where everything is visible.
 
-**C. elegans используется НЕ для доказательства что центриоль = память, а как ВИЗУАЛИЗАЦИЯ:** показать что centriole pedigree делений коррелирует с судьбой в системе где это видно полностью.
+**Gönczy (pers. comm., 21 Jul 2026):** Centrioles retained in terminally differentiated cells of the adult somatic gonad likely remain for a functional reason — supporting the OS2 hypothesis.
 
-### 1.3. RPE1 — тест носителя
+### 1.3. Key Predictions
 
-У млекопитающих нет жёсткой клеточной линии. Но если centriole pedigree центриоли коррелирует с судьбой и в RPE1 — значит принцип универсален, а центриоль является конкретным материальным носителем.
+**Prediction 1 (Convergence):** Different centriole pedigrees → same fate. Pedigrees converge.
 
-### 1.5. 🔴 Ключевые предсказания
-
-**Предсказание 1 (конвергенция):** Разные centriole pedigree → один узел карты → одинаковые потомки.
-
-**Предсказание 2 (centriole pedigree > возраст):** Centriole pedigreeия предсказывает судьбу ЛУЧШЕ чем возраст. **Anderson 2009 показал разницу во ВРЕМЕНИ цилиогенеза (94% vs 6%), но обе сестринские клетки в конечном счёте формируют цилию.** Возраст создаёт временну́ю асимметрию, но конечная судьба определяется узлом карты (centriole pedigree). Пример: асимметричное деление стволовых клеток — разница в возрасте = 1 деление, разница в судьбе = полная.
-
-> **Если две центриоли прошли РАЗНЫЕ последовательности ориентаций, но клетки получили одинаковую судьбу — centriole pedigree ПЕРЕСЕКЛИСЬ.**
-
-**Статус гипотезы:** 🟡 ОРИГИНАЛЬНАЯ. Ни одна работа в литературе не подтверждает и не опровергает. C. elegans (полная клеточная линия известна) используется как ТЕСТ принципа, а не как подтверждение. Подробный анализ: `docs/HYPOTHESIS_LITERATURE_SEARCH.md`.
+**Prediction 2 (Pedigree > Age):** Centriole pedigree predicts fate BETTER than centriole age.
 
 ```
-Центриоль A: верх → право → зад    → судьба: нейрон
-Центриоль B: верх → лево  → перед  → судьба: нейрон
+Centriole A: up → right → posterior → fate: neuron
+Centriole B: up → left  → anterior  → fate: neuron
 
-Centriole pedigreeии разные. Судьба — одинаковая.
-Значит: centriole pedigree A и B ПЕРЕСЕКЛИСЬ — 
-привели к одному результату.
+Different pedigrees. Same fate.
+Therefore: pedigrees A and B CONVERGED — led to the same result.
 ```
 
-Это означает что пространство centriole pedigrees НЕ взаимно-однозначно с судьбами. Есть **классы эквивалентности** — группы разных centriole pedigrees, сходящихся к одной судьбе.
-
-**Предсказание:** если взять две клетки с одинаковой судьбой но разной centriole pedigree — они принадлежат одному классу эквивалентности. Конвергенция доказана статистически, без молекулярных маркеров.
-
-**Следствие:** карта — граф. **Узлы = точки необратимой дифференцировки.** При асимметричном делении centriole pedigree определяет которая из дочерей пройдёт узел. OS3 добавляет генетические сети.
+This means the space of centriole pedigrees is NOT one-to-one with fates. There are **equivalence classes** — groups of different pedigrees converging to one fate.
 
 ---
 
-## 2. 🔴 ГЛАВНЫЙ ЭКСПЕРИМЕНТ: Конвергенция centriole pedigrees
+## 2. Primary Experiment: Pedigree Convergence
 
-> **Это центральный эксперимент всего ARGUS-OS2. Если он удаётся — гипотеза доказана. Если нет — опровергнута.**
+### 2.1. Logic
 
-### 2.1. Логика
+Take 4 centrioles of the SAME age (3 divisions):
 
-Берём 4 центриоли **одного возраста** (прошли через 3 деления):
+| Centriole | Pedigree (∥=parallel, ⟂=perpendicular) | Fate prediction |
+|-----------|----------------------------------------|-----------------|
+| A | ∥ → ∥ → ⟂ | neuron |
+| B | ⟂ → ∥ → ∥ | skin |
+| C | ∥ → ⟂ → ⟂ | **neuron** (≠ B, same age) |
+| D | ⟂ → ⟂ → ∥ | **skin** (≠ A, same age) |
 
-| Центриоль | Centriole pedigreeия (∥=вдоль, ⟂=поперёк) | Предсказание судьбы |
-|:---:|-----------|:---:|
-| A | ∥ → ∥ → ⟂ | нейрон |
-| B | ⟂ → ∥ → ∥ | кожа |
-| C | ∥ → ⟂ → ⟂ | **нейрон** (≠ B, тот же возраст) |
-| D | ⟂ → ⟂ → ∥ | **кожа** (≠ A, тот же возраст) |
+**If age is the only factor:** fate A=B=C=D (all age 3). ❌ Hypothesis disproven.
+**If pedigree is a factor:** fate A=C≠B=D. ✅ Hypothesis confirmed.
 
-**Если возраст — единственный фактор:** судьба A=B=C=D (все возраста 3). ❌ Гипотеза опровергнута.
-**Если centriole pedigree — фактор:** судьба A=C≠B=D. Разные centriole pedigree → одинаковый результат. ✅ Гипотеза подтверждена.
+### 2.2. Experimental Design
 
-> **Ориентация бинарна:** при каждом делении клетка выбирает одно из ДВУХ направлений (в C. elegans: вдоль предыдущей оси или перпендикулярно; в RPE1 монослое: угол θ относительно предыдущего деления). Третьего направления нет. Это фундаментально упрощает запись centriole pedigree.
+| Step | Action |
+|:---:|--------|
+| 1 | 3D time-lapse RPE1, 3 generations, Centrin1-GFP + SiR-Tubulin |
+| 2 | Record pedigree (∥/⟂ for C. elegans, angle θ for RPE1) for 200+ cells |
+| 3 | Cluster pedigrees → find convergent groups |
+| 4 | Endpoint: cell fate (Arl13B). A=C? B=D? |
 
-### 2.2. Почему это невозможно объяснить иначе
+### 2.3. Success Criteria
 
-- Возраст одинаков (3 деления) → не объясняет разницу A≠B
-- Генетика одинакова (все RPE1) → не объясняет
-- Среда одинакова (одна чашка) → не объясняет
-- **Только centriole pedigree объясняет:** A и C сошлись к X, B и D сошлись к Y
-
-### 2.3. Экспериментальная схема
-
-```
-Шаг 1: 3D time-lapse RPE1, 3 поколения, Centrin1-GFP + SiR-Tubulin (XY)
-Шаг 2: Для 200+ клеток записать centriole pedigreeию (∥/⟂ для C. elegans, угол θ для RPE1)
-Шаг 3: Кластеризовать centriole pedigree → найти конвергентные группы
-Шаг 4: Endpoint — судьба клетки (Arl13B). A=C? B=D? A≠B?
-```
-
-### 2.4. Критерий успеха
-
-| Результат | Вердикт |
-|-----------|:---:|
-| Судьба A=C≠B=D | 🔴 **Гипотеза доказана.** Centriole pedigreeия предсказывает судьбу. |
-| Судьба A=B=C=D | ❌ **Гипотеза опровергнута.** Возраст достаточен. |
-| Конвергенция частичная (A=C в 70% случаев) | 🟡 Centriole pedigreeия — фактор, но не единственный. |
+| Result | Verdict |
+|--------|---------|
+| Fate A=C≠B=D | 🔴 Hypothesis proven. Pedigree predicts fate. |
+| Fate A=B=C=D | ❌ Hypothesis disproven. Age is sufficient. |
+| Partial convergence (A=C in 70%) | 🟡 Pedigree is a factor, not the only one. |
 
 ---
 
-## 3. Экспериментальный дизайн
+## 3. Two Phases
 
-### 2.1. Две фазы
+| Phase | System | Question |
+|:---:|--------|----------|
+| 1 | C. elegans | Does the PRINCIPLE work? Pedigree→fate in a fully visible system. |
+| 2 | RPE1 (ARGUS-OS1 data) | Is the CENTRIOLE the carrier? Is the principle universal? |
 
-| Фаза | Система | Вопрос |
-|:---:|---------|--------|
-| **1** | C. elegans | Работает ли ПРИНЦИП? Centriole pedigreeия → судьба в системе где всё видно. |
-| **2** | RPE1 (ARGUS-OS1) | Является ли ЦЕНТРИОЛЬ носителем? Универсален ли принцип? |
+### Phase 1: C. elegans
 
-### 2.2. Фаза 1: C. elegans — полная клеточная карта, проверка гипотезы.
+| Step | Method |
+|:---:|--------|
+| 1 | C. elegans embryo, histone::GFP + γ-tubulin::GFP |
+| 2 | 3D time-lapse zygote→~100 cells |
+| 3 | Full division tree reconstruction |
+| 4 | Per cell: pedigree = sequence of XYZ vectors |
+| 5 | Cell fate: known (Sulston 1977) or markers |
 
-**Цель:** Показать что пространственная centriole pedigree делений предсказывает судьбу клетки.
+**Success criterion:** I(pedigree; fate) > 0.5 bits → principle works. Proceed to Phase 2.
 
-| Шаг | Метод |
-|:---:|-------|
-| 1 | Эмбрион C. elegans, histone::GFP + γ-tubulin::GFP |
-| 2 | 3D time-lapse от зиготы до ~100 клеток |
-| 3 | Реконструкция полного дерева делений |
-| 4 | Для каждой клетки: centriole pedigree = последовательность XYZ-векторов |
-| 5 | Судьба клетки: известна (Sulston 1977) или маркеры (Pha-4, Elt-2 и др.) |
-| 6 | **Анализ:** I(centriole pedigree ; судьба) — сколько информации о судьбе в centriole pedigree? |
+### Phase 2: RPE1
 
-**Критерий успеха Фазы 1:** I(centriole pedigree;судьба) > 0.5 бита → принцип работает. Можно переходить к Фазе 2.
-
-### 2.3. Фаза 2: RPE1 — тест центриоли как носителя
-
-| Шаг | Метод |
-|:---:|-------|
+| Step | Method |
+|:---:|--------|
 | 1 | RPE1-hTERT Centrin1-GFP + SiR-Tubulin, 3D time-lapse |
-| 2 | 3-4 поколения, 48-72h |
-| 3 | Для каждого деления: XYZ-вектор веретена |
-| 4 | Centriole pedigreeия центриоли = последовательность векторов делений |
-| 5 | Endpoint: судьба (цилия — Arl13B, Ki67, маркеры) |
-| 6 | **Анализ:** I(судьба ; centriole pedigree_центриоли) vs I(судьба ; возраст_центриоли) |
+| 2 | 3-4 generations, 48-72h |
+| 3 | Per division: spindle XYZ vector |
+| 4 | Centriole pedigree = sequence of division vectors |
+| 5 | Endpoint: fate (cilium — Arl13B, Ki67) |
 
-**Критерий успеха Фазы 2:** Centriole pedigreeия предсказывает судьбу ЛУЧШЕ чем возраст → центриоль = носитель lineage-памяти.
-
----
-
-## 3. Измерения
-
-| Переменная | Метод | Разрешение |
-|-----------|-------|:---:|
-| Centriole pedigreeия центриоли | Centrin1-GFP tracking. **C. elegans: бинарная** (∥/⟂). **RPE1: угол θ** (0-180°, непрерывная). | 1 клетка |
-| Вектор веретена | SiR-Tubulin + XY-реконструкция | ~1 µm |
-| Судьба клетки | Arl13B (цилия), дифф. маркеры | 1 клетка |
+**Success criterion:** Pedigree predicts fate BETTER than age → centriole = lineage memory carrier.
 
 ---
 
-## 4. Статистический дизайн
+## 4. Statistical Design
 
-### 4.1. Pilot (C. elegans)
+### Pilot (C. elegans)
+**AUC test:** N=100 centrioles (20 from 5 different pedigrees). SVM classifier. H₀: AUC=0.5.
 
-**AUC тест:** N = 100 центриолей (по 20 из 5 разных centriole pedigrees). SVM классификатор: структура → centriole pedigree. H₀: AUC=0.5.
-
-### 4.2. Main (RPE1)
-
-**Условная энтропия:** 200 клеточных пар. H(судьба) vs H(судьба | centriole pedigree).
-
-При ΔI(судьба;centriole pedigree) ≥ 0.3 бита → N=200 даёт мощность >80%.
+### Main (RPE1)
+**Conditional entropy:** 200 cell pairs. H(fate) vs H(fate|pedigree). ΔI ≥ 0.3 bits → N=200 gives power >80%.
 
 ---
 
-## 5. Бюджет
+## 5. Budget
 
-| Фаза | Система | Срок | Бюджет |
-|------|---------|:---:|:---:|
-| **1: C. elegans** | Эмбрион, time-lapse, анализ | 8 недель | $5,000 |
-| **2: RPE1** | Данные ARGUS-OS1, анализ centriole pedigrees | 12 недель | $8,000 |
-| **Total** | | **20 недель** | **$13,000** |
-
-> **Никаких дополнительных маркеров.** Только данные OS1: Centrin1-GFP + SiR-Tubulin + Arl13B.
+| Phase | System | Duration | Budget |
+|-------|--------|:---:|:---:|
+| 1: C. elegans | Embryo time-lapse + analysis | 8 weeks | $5,000 |
+| 2: RPE1 | OS1 data analysis | 12 weeks | $8,000 |
+| **Total** | | **20 weeks** | **$13,000** |
 
 ---
 
-## 6. Что этот дизайн даёт (чего не давал Odf2-KO)
-
-| Odf2-KO (старый OS2) | Lineage-память (новый OS2) |
-|----------------------|----------------------------|
-| Пытался доказать причинность | Предсказывает судьбу |
-| Требовал нокаутов, rescue | Только наблюдение |
-| 9 рецензий, логические проблемы | Одна гипотеза, прямой тест |
-| Молекулярный механизм | Информационный принцип |
-| $42K, 30 недель | $25K, 24 недели |
-
----
-
-## 7. Результаты
-
-| Исход | Значение |
-|--------|----------|
-| Centriole pedigreeия предсказывает судьбу ЛУЧШЕ возраста | 🔴 **Новый принцип.** Центриоль = lineage barcode. *Cell* / *Nature*. |
-| Разные centriole pedigree → одинаковая структура → одинаковая судьба | 🔴 **Конвергенция доказана.** Классы эквивалентности centriole pedigrees. Прогениторная карта = граф. |
-| Centriole pedigreeия ≈ возраст (нет улучшения) | Гипотеза не подтверждена. Возраст достаточен. |
-| Centriole pedigreeия НЕ коррелирует | Гипотеза опровергнута. Публикация против — ценная. |
-
----
-
-## 8. Key References
+## 6. Key References
 
 | # | Reference | PMID |
 |---|-----------|------|
-| 1 | Sulston & Horvitz (1977) — C. elegans lineage | 838129 |
-| 2 | Anderson & Stearns (2009) — centriole age | 19682908 |
-| 3 | Yamashita et al. (2007) — mother centrosome | 17255513 |
-| 4 | Wang et al. (2009) — mouse neocortex | 19829375 |
-| 5 | Reina & Gonzalez (2014) — fate follows age | 25047620 |
-| 6 | Paridaen et al. (2013) — cilium membrane | 24120134 |
-| 7 | Thomas & Meraldi (2024) — Cenexin/Plk1 | 39012627 |
-| 8 | Erpf & Mikeladze-Dvali (2020) — Dendra2 | — |
-| 9 | Peyre et al. (2011) — spindle orientation | 21444683 |
-| 10 | Lechler & Fuchs (2005) — asymmetric skin division | 16041361 |
-| 11 | Kashihara et al. (2019) — SDA hierarchy | 30623524 |
-| 12 | Sulston et al. (1983) — embryonic lineage | 3320053 |
+| 1 | Sulston & Horvitz (1977) — C. elegans post-embryonic lineage | 838129 |
+| 2 | Sulston et al. (1983) — embryonic lineage | 6684600 |
+| 3 | Anderson & Stearns (2009) — centriole age → cilium timing | 19682908 |
+| 4 | Yamashita et al. (2007) — Drosophila mGSC asymmetric inheritance | 17255513 |
+| 5 | Wang et al. (2009) — mouse radial glia asymmetric inheritance | 19829375 |
+| 6 | Erpf & Mikeladze-Dvali (2020) — Dendra2::SAS-4 tracking | DOI:10.17912/micropub.biology.000286 |
+| 7 | Kalbfuss & Gönczy (2023) — 88% centriole elimination | 37256957 |
+| 8 | Magescas et al. (2023) — SAS-1 loss initiates elimination | 37987153 |
+| 9 | Coffman et al. (2016) — MT asymmetry C. elegans | 27733624 |
+| 10 | Croisier et al. (2025) — EM centrioles in rectal cells | 40475707 |
+| 11 | Januschke et al. (2011) — Drosophila NB centrosome | 21407209 |
+| 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
 
 ---
 
-*Version 4.0 — Полная смена парадигмы. От молекулярной причинности к информационному предсказанию. Jaba Tqemaladze, 2026-07-21.*
-
----
-
-## Reproducibility & Quality
-
-**Power analysis:** N≈40 sister-cell pairs for OR≥1.5 (α=0.05, β=0.2). Pilot quantifies available pairs from OS1 data.
-**Blinding:** analyst scoring centriole fate blinded to pedigree.
-**Pre-registration:** OSF before data collection.
-**Reproducibility:** all code + data on GitHub + Zenodo (CC-BY).
-**Limitations:** (1) C. elegans-specific — cross-species validation needed. (2) Sister-cell pairs rare (~5% of divisions). (3) Stochasticity confirmed for 4-cell stage + ABpr lineage only. (4) Multicollinearity risk between pedigree and cell_type — VIF>5 triggers Plan B.
-
----
-
-## Budget
-
-ARGUS V7 (OS1 platform, already built): $0
-V7→V8 upgrade (light-sheet, fs-laser, tweezers, manipulators, Jetson AGX): ~$141,000
-**Total OS2 hardware upgrade: ~$141,000**
-
-## Timeline
-
-| Phase | Duration |
-|-------|----------|
-| OS1 data collection | Complete (from OS1) |
-| OS2 analysis setup | 1 month |
-| Sister-cell pair analysis | 3 months |
-| Convergence testing | 2 months |
-| Write-up | 2 months |
-| **Total** | **~8 months** |
-
-## Quality Controls
-
-**Power analysis:** N≈40 sister-cell pairs (OR≥1.5, α=0.05, β=0.2). OS1 provides data.
-**Blinding:** analyst blinded to pedigree during fate scoring.
-**Pre-registration:** OSF before analysis begins.
-**Negative control:** OS1 dark control embryos (lasers OFF).
-**Cross-strain validation:** N2 + CB4856 if available.
-**VIF threshold:** >5 triggers Plan B (sister-cell only, no population model).
-**Reproducibility:** all code + data on GitHub + Zenodo (CC-BY).
-
-## Key References
-
-| # | Reference | PMID |
-|---|-----------|------|
-| 10 | Coffman et al. (2016) — MT asymmetry | 27733624 |
-| 11 | Croisier et al. (2025) — EM centrioles | 40475707 |
-| 12 | Kalbfuss & Gönczy (2023) — elimination review | 37963546 |
+*Version 5.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*

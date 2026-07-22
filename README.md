@@ -1,12 +1,13 @@
-All causality of differentiation impossible without centriole.
-
 # ARGUS-OS2
 
-**Centriole pedigree → дифференцировка.** Проверка 2 предсказаний.
+ARGUS-OS2 tests the centriole pedigree convergence hypothesis using data from ARGUS-OS1.
 
-Фаза 1: C. elegans (959 клеток, полная карта).
-Фаза 2: RPE1 (перенос на млекопитающих).
+**Question:** Does centriole pedigree (sequence of division orientations) predict cell fate convergence?
 
-Храповик. Обнуление счётчика. iPSC ≠ ESC.
-Данные от OS1. → OS3.
-Stochastic centriole segregation (Gönczy 2023, 36988082) strengthens pedigree hypothesis.
+**Two phases:**
+1. C. elegans — Principle visualization (complete lineage)
+2. RPE1 — Centriole as carrier test
+
+**Primary experiment:** Different pedigrees → same fate = convergence proven.
+
+**Budget:** $13,000 (20 weeks)
