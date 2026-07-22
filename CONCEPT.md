@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 11.0
+**Version:** 12.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -178,9 +178,10 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 | 10 | Croisier et al. (2025) — EM centrioles in rectal cells | 40475707 |
 | 11 | Januschke et al. (2011) — Drosophila NB centrosome | 21407209 |
 | 14 | Bei et al. (2002) — SRC-1 + Wnt control cleavage orientation in C. elegans, Dev Cell | 12110172 |
+| 15 | **Targeted mother centrosome localization in CD8+ T-cells promotes memory formation (2025)** — direct evidence of centriole→fate in mammals, Cell Rep | 39764850 |
 | 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
 | 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
 
 ---
 
-*Version 11.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 12.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
