@@ -83,8 +83,8 @@ Take 4 centrioles of the SAME age (3 divisions):
 
 ### 2.4. Phase 1→Phase 2 Checkpoint
 After Phase 1 (C. elegans):
-- If I(pedigree; fate) < 0.2 bits → STOP. Hypothesis unsupported. Publish negative result.
-- If 0.2 ≤ I < 0.4 bits → PROCEED to Phase 2 with N increased to 400 cells.
+- If I(pedigree; fate | position, age) < 0.1 bits → STOP (pedigree adds nothing beyond position+age). Hypothesis unsupported. Publish negative result.
+- If 0.1 ≤ I(pedigree; fate | position, age) < 0.3 bits → PROCEED to Phase 2 with N increased to 500 cells.
 - If I ≥ 0.4 bits → PROCEED to Phase 2 as planned (N=500).
 - Borderline OS1 data (<1.5μm precision, 10-15% phototoxicity): flagged for sensitivity analysis, excluded from primary analysis.
 
