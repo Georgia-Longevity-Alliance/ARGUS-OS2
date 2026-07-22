@@ -380,3 +380,17 @@ Multinomial logistic regression with 4 outcome categories. Zombie→Eliminated t
 ### 7.5. Budget Implication
 
 Zombie analysis is CORE — no additional budget beyond base $52K. E5 ($15K) provides the iron haematoxylin validation. All other zombie metrics use existing SAS-4 + SPD-2 data from OS1.
+
+### Recommended Funding (per review committee)
+
+| Component | Status | Amount |
+|-----------|:---:|:---:|
+| Base OS2 | Approved | $105,000 |
+| E1 Wnt Perturbation | **Mandatory** | $25,000 |
+| E5 Iron Haematoxylin | **Mandatory** | $15,000 |
+| E3 Ninein-GFP | Approved (reduced N=200) | $15,000 |
+| E2 Laser Ablation | Deferred to OS3 | — |
+| E4 Comparative Drosophila | Deferred to separate project | — |
+| E6 Planaria | Deferred | — |
+| E7 Proteasome | Deferred | — |
+| **Total Recommended** | | **$160,000** |
