@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 7.0
+**Version:** 8.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -77,6 +77,14 @@ Take 4 centrioles of the SAME age (3 divisions):
 | 4 | Endpoint: cell fate panel — Arl13B (cilium), βIII-tubulin (neuronal), cytokeratin (epithelial), Ki67 (proliferation). A=C? B=D? |
 
 ### 2.3. Success Criteria
+
+### 2.4. Phase 1→Phase 2 Checkpoint
+After Phase 1 (C. elegans):
+- If I(pedigree; fate) < 0.2 bits → STOP. Hypothesis unsupported. Publish negative result.
+- If 0.2 ≤ I < 0.4 bits → PROCEED to Phase 2 with N increased to 400 cells.
+- If I ≥ 0.4 bits → PROCEED to Phase 2 as planned (N=200).
+- Borderline OS1 data (<1.5μm precision, 10-15% phototoxicity): flagged for sensitivity analysis, excluded from primary analysis.
+
 
 | Result | Verdict |
 |--------|---------|
@@ -166,4 +174,4 @@ Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) photo
 
 ---
 
-*Version 7.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 8.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
