@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 9.0
+**Version:** 10.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -21,6 +21,7 @@ The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), no
 **Spatial centriole pedigree (sequence of division orientations) predicts cell fate. The centriole is a candidate material carrier of this information.**
 
 ### 1.1. Principle
+**Caveat:** In C. elegans, division orientation is determined by cell position in the morphogenetic field (Sulston 1983). Pedigree IS therefore a position marker — not an independent variable. Correlation between pedigree and fate is EXPECTED trivially. The non-trivial question: does pedigree predict fate BETTER than position alone? This is tested by comparing cells at similar positions but with different pedigrees (sister cells at asymmetric divisions).
 
 In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
@@ -141,9 +142,9 @@ After Phase 1 (C. elegans):
 
 | Phase | System | Duration | Budget |
 |-------|--------|:---:|:---:|
-| 1: C. elegans | Embryo time-lapse + analysis | 8 weeks | $5,000 |
-| 2: RPE1 | OS1 data analysis | 12 weeks | $8,000 |
-| **Total** | | **20 weeks** | **$25,000** |
+| 1: C. elegans | Embryo time-lapse + analysis | 8 weeks | $12,000 |
+| 2: RPE1 | OS1 data analysis | 12 weeks | $25,000 |
+| **Total** | | **20 weeks** | **$52,000 (realistic: includes confocal access, automated focus, ML analysis)** |
 
 ---
 
@@ -177,4 +178,4 @@ Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) photo
 
 ---
 
-*Version 9.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 10.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
