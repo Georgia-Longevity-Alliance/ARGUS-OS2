@@ -317,3 +317,49 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Contingency | $2,000 |
 
 > **Verdict on RITE:** Defer to OS3 or separate project. For OS2, use established markers + comparative framework without genetic engineering.
+
+---
+
+## 7. Zombie Centriole Analysis (Core, not optional)
+
+### 7.1. Three-State Classification
+
+Every centriole at 100-cell endpoint falls into one of three states:
+
+| State | SAS-4::GFP | SPD-2::mCherry | Heidenhain Iron | Biological meaning |
+|-------|:---:|:---:|:---:|------|
+| **ALIVE** | + | + | + | Functional MTOC — organizes microtubules, supports cilium |
+| **ZOMBIE** | + | − | + | Structurally intact, functionally dead — PCM lost, no MTOC activity |
+| **AGGREGATE** | + | − | − | NOT a centriole — SAS-4 protein aggregate, misclassification risk |
+| **ELIMINATED** | − | − | − | Fully degraded |
+
+### 7.2. Key Questions OS2 Must Answer
+
+1. **Does Pedigree Score predict zombie→eliminated transition time?** (Survival analysis: time from SPD-2 loss to SAS-4 loss)
+
+2. **Are zombies a normal intermediate state, or a dead-end?**
+
+3. **Do cells with zombie centrioles have different fates than cells with alive centrioles?**
+
+4. **What fraction of "retained" centrioles (SAS-4+ only criterion) are actually zombies?** (Without SPD-2, the false-positive rate for "retention" could be 30-50%)
+
+### 7.3. Statistical Model
+
+```
+State(t) = f(PedigreeScore, age, position, lineage)
+```
+
+Multinomial logistic regression with 4 outcome categories. Zombie→Eliminated transition modeled via competing risks (Fine-Gray with alive→zombie as the first event, zombie→eliminated as the second).
+
+### 7.4. Integration with Enrichment Experiments
+
+| Experiment | Zombie relevance |
+|------------|------------------|
+| **E5 (Iron Haematoxylin)** | Distinguishes zombie (iron+) from aggregate (iron−). **Essential validation.** |
+| **E2 (Laser Ablation)** | Forced pedigree → measure zombie formation rate |
+| **E1 (Wnt Perturbation)** | Changed pedigree → does zombie frequency change? |
+| **E4 (Comparative)** | Are zombies C. elegans-specific? Check Drosophila NB and RPE1. |
+
+### 7.5. Budget Implication
+
+Zombie analysis is CORE — no additional budget beyond base $52K. E5 ($15K) provides the iron haematoxylin validation. All other zombie metrics use existing SAS-4 + SPD-2 data from OS1.
