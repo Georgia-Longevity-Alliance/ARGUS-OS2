@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 6.0
+**Version:** 7.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -32,7 +32,6 @@ C. elegans: complete cell lineage known (Sulston & Horvitz 1977). Centriole pedi
 
 **C. elegans is used NOT to prove centriole = memory, but as VISUALIZATION:** show that centriole pedigree correlates with fate in a system where everything is visible.
 
-**Gönczy (pers. comm., 21 Jul 2026):** Centrioles retained in terminally differentiated cells of the adult somatic gonad likely remain for a functional reason — supporting the OS2 hypothesis.
 
 ### 1.3. Key Predictions
 
@@ -75,7 +74,7 @@ Take 4 centrioles of the SAME age (3 divisions):
 | 1 | 3D time-lapse RPE1, 3 generations, Centrin1-GFP + SiR-Tubulin |
 | 2 | Record pedigree (∥/⟂ for C. elegans, angle θ for RPE1) for 200+ cells |
 | 3 | Cluster pedigrees → find convergent groups |
-| 4 | Endpoint: cell fate (Arl13B). A=C? B=D? |
+| 4 | Endpoint: cell fate panel — Arl13B (cilium), βIII-tubulin (neuronal), cytokeratin (epithelial), Ki67 (proliferation). A=C? B=D? |
 
 ### 2.3. Success Criteria
 
@@ -123,7 +122,7 @@ Take 4 centrioles of the SAME age (3 divisions):
 ## 4. Statistical Design
 
 ### Pilot (C. elegans)
-**AUC test:** N=100 centrioles (20 from 5 different pedigrees). SVM classifier. H₀: AUC=0.5.
+**AUC test:** N=500 centrioles screened to yield ~60 with retained centrioles (12% of 500, accounting for 88% elimination — Kalbfuss 2023). SVM classifier. H₀: AUC=0.5.
 
 ### Main (RPE1)
 **Conditional entropy:** 200 cell pairs. H(fate) vs H(fate|pedigree). ΔI ≥ 0.3 bits → N=200 gives power >80%.
@@ -139,6 +138,9 @@ Take 4 centrioles of the SAME age (3 divisions):
 | **Total** | | **20 weeks** | **$25,000** |
 
 ---
+
+## 5a. OS1 Data Quality Criteria
+Inclusion: (a) ≥3 tracked divisions, (b) XYZ vector precision <1μm, (c) phototoxicity score <10% division rate drop. Exclusion: abnormal cell behavior, incomplete lineage.
 
 ## 5b. Alternative Hypothesis
 **H₀_alt:** Centriole pedigree is a MARKER of cell fate (determined by position/morphogens), not a CAUSE. If pedigree predicts fate but experimental perturbation of pedigree does not change fate → centriole is a marker, not a carrier.
@@ -164,4 +166,4 @@ Take 4 centrioles of the SAME age (3 divisions):
 
 ---
 
-*Version 6.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 7.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
