@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 5.0
+**Version:** 6.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -25,6 +25,8 @@ The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), no
 In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
 ### 1.2. C. elegans — Principle Visualization
+**Critical limitation:** Kalbfuss & Gönczy (2023) showed centrioles are eliminated in ~88% of cells — fate follows cell type, not vice versa. OS2 tests whether pedigree predicts fate in the ~12% of cells that RETAIN centrioles. This is explicitly a correlation test, not a causality claim.
+**Structural caveat:** C. elegans centrioles are atypical (singlet microtubules, lack δ/ε-tubulin; Hodges et al. 2010, PMID 20388734). Generalizability to mammals requires RPE1 validation in Phase 2.
 
 C. elegans: complete cell lineage known (Sulston & Horvitz 1977). Centriole pedigree of each cell → its fate. Embryo is transparent. All divisions visible.
 
@@ -134,9 +136,13 @@ Take 4 centrioles of the SAME age (3 divisions):
 |-------|--------|:---:|:---:|
 | 1: C. elegans | Embryo time-lapse + analysis | 8 weeks | $5,000 |
 | 2: RPE1 | OS1 data analysis | 12 weeks | $8,000 |
-| **Total** | | **20 weeks** | **$13,000** |
+| **Total** | | **20 weeks** | **$25,000** |
 
 ---
+
+## 5b. Alternative Hypothesis
+**H₀_alt:** Centriole pedigree is a MARKER of cell fate (determined by position/morphogens), not a CAUSE. If pedigree predicts fate but experimental perturbation of pedigree does not change fate → centriole is a marker, not a carrier.
+**Test:** OS3 (centriole transplantation) — if transplanting a "bad pedigree" centriole into a "good fate" cell changes fate → causality proven. If not → centriole is a correlated marker.
 
 ## 6. Key References
 
@@ -153,8 +159,9 @@ Take 4 centrioles of the SAME age (3 divisions):
 | 9 | Coffman et al. (2016) — MT asymmetry C. elegans | 27733624 |
 | 10 | Croisier et al. (2025) — EM centrioles in rectal cells | 40475707 |
 | 11 | Januschke et al. (2011) — Drosophila NB centrosome | 21407209 |
+| 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
 | 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
 
 ---
 
-*Version 5.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 6.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
