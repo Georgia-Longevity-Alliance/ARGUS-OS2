@@ -64,6 +64,7 @@ ARGUS-OS2 tests whether **centriole pedigree** (sequence of division orientation
 ## 4. Causality Test (Core, not optional)
 
 ### 4.1. Ninein Knockdown
+**CEP170-KD control:** CEP170 is another sDAP protein. Unlike ninein, CEP170-KD does NOT randomize mother centriole inheritance — but affects MT attachment. If pedigree→fate effect persists in CEP170-KD but disappears in ninein-KD → effect is ninein-specific (not general sDAP disruption).
 **Rationale:** Barandun 2025 showed ninein-KD randomizes mother centrosome inheritance. If pedigree predicts fate in WT but NOT in ninein-KD → pedigree effect is ninein-dependent → mechanistic link.
 
 **Method:** siRNA ninein in RPE1. Track pedigree→fate in KD vs WT.
