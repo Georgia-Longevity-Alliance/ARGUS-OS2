@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 13.0
+**Version:** 14.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -107,7 +107,7 @@ After Phase 1 (C. elegans):
 
 | Step | Method |
 |:---:|--------|
-| 1 | C. elegans embryo, histone::GFP + γ-tubulin::GFP |
+| 1 | C. elegans embryo, SAS-4::GFP + Histone::mCherry (centriole-specific, not PCM) |
 | 2 | 3D time-lapse zygote→~100 cells |
 | 3 | Full division tree reconstruction |
 | 4 | Per cell: pedigree = sequence of XYZ vectors |
@@ -185,4 +185,4 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 
 ---
 
-*Version 13.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 14.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
