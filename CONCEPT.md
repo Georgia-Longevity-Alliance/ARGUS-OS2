@@ -292,3 +292,28 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Component | Base | +E1 | +E2 | +E3 | +E4 | +E5 | **Full** |
 |-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Total** | $52K | $25K | $35K | $25K | $40K | $15K | **$192K** |
+
+### E6: Planaria — Centriole Fate During Regeneration ($30K)
+**Rationale:** Planarians regenerate entire body from tiny fragments via neoblasts (pluripotent stem cells). Unlike C. elegans (deterministic lineage, 88% centriole elimination), planarians RETAIN centrioles in stem cells and differentiated cells. If centriole pedigree carries fate information, regenerating planarians should show pedigree→fate correlation during blastema formation.
+
+**Why planaria adds value:**
+- **Regeneration context:** Does centriole pedigree reset during regeneration? Or does it carry "memory" of original tissue?
+- **Stem cell biology:** Neoblasts are the ONLY dividing cells in adult planarians — perfect for tracking centriole inheritance through multiple divisions
+- **Evolutionary distance:** Lophotrochozoa (planaria) vs Ecdysozoa (C. elegans) vs Deuterostomia (human RPE1) — if principle holds across all 3, it's truly universal
+
+**Approach (NOT RITE — simpler):**
+1. γ-tubulin or Centrin immunostaining in fixed planarians during regeneration
+2. Track centriole number/distribution across blastema vs remnant tissue
+3. Compare with C. elegans and RPE1 data
+
+**N:** 30 planarians × 3 timepoints | **Duration:** 8 weeks | **Budget:** $30,000
+
+| Item | Cost |
+|------|:---:|
+| Planaria facility + maintenance | $5,000 |
+| Antibodies (Centrin, γ-tubulin, SAS-4) | $8,000 |
+| Confocal microscopy time | $10,000 |
+| Personnel | $5,000 |
+| Contingency | $2,000 |
+
+> **Verdict on RITE:** Defer to OS3 or separate project. For OS2, use established markers + comparative framework without genetic engineering.
