@@ -23,6 +23,7 @@ The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), no
 ### 1.1. Principle
 **Caveat:** In C. elegans, division orientation is determined by cell position in the morphogenetic field (Sulston 1983). Pedigree IS therefore a position marker — not an independent variable. Correlation between pedigree and fate is EXPECTED trivially. The non-trivial question: does pedigree predict fate BETTER than position alone? This is tested by comparing cells at similar positions but with different pedigrees (sister cells at asymmetric divisions).
 **Position control strategy:** compare sister cells from asymmetric divisions — identical position, identical mother, identical age, DIFFERENT pedigrees (one daughter gets old centriole, one gets new). This is the only comparison where pedigree is the sole systematic difference. N = all asymmetric divisions in 100-embryo dataset from OS1.
+**Inter-embryo control:** cells at identical positions in different embryos (invariant lineage) with different pedigrees (due to stochastic centrosome inheritance — Erpf 2020). This is the complementary control: same position, different pedigree.
 
 In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
@@ -107,7 +108,7 @@ After Phase 1 (C. elegans):
 
 | Step | Method |
 |:---:|--------|
-| 1 | C. elegans embryo, SAS-4::GFP + Histone::mCherry (centriole-specific, not PCM) |
+| 1 | C. elegans embryo, SAS-4::GFP + SPD-2::mCherry + Histone::BFP (MANDATORY triple marker: SAS-4 for centriole core, SPD-2 for PCM, Histone for nuclei) |
 | 2 | 3D time-lapse zygote→~100 cells |
 | 3 | Full division tree reconstruction |
 | 4 | Per cell: pedigree = sequence of XYZ vectors |
