@@ -1,6 +1,6 @@
 # CONCEPT — ARGUS-OS2
 
-**Version:** 12.0
+**Version:** 13.0
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole as material carrier of spatial lineage memory
 
@@ -27,8 +27,8 @@ The mother/daughter centriole is identified by CONTINUOUS AI TRACKING (24/7), no
 In embryogenesis, cell position determines fate. Spatial centriole pedigree — the sequence "up→right→posterior→..." — IS the record of where the cell was. If this information is stored anywhere, fate can be predicted.
 
 ### 1.2. C. elegans — Principle Visualization
-**Critical limitation:** Kalbfuss & Gönczy (2023) showed centrioles are eliminated in ~88% of cells — fate follows cell type, not vice versa. OS2 tests whether pedigree predicts fate in the ~12% of cells that RETAIN centrioles. This is explicitly a correlation test, not a causality claim.
-**Structural caveat:** C. elegans centrioles are atypical (singlet microtubules, lack δ/ε-tubulin; Hodges et al. 2010, PMID 20388734). Generalizability to mammals requires RPE1 validation in Phase 2.
+**Critical limitation:** Kalbfuss & Gönczy (2023) demonstrated that centriole elimination is stereotyped and cell-type-determined — "it is not cell age, but instead cell fate, that determines whether and when centrioles are eliminated." This ESTABLISHES a functional centriole↔fate link, supporting OS2's rationale: if fate determines centriole status, then centriole pedigree should carry predictive information about fate. We test this in the cells that retain centrioles.
+**Structural caveat:** C. elegans centrioles are evolutionarily reduced (singlet microtubules) but retain the conserved 14-protein core (Hodges et al. 2010, PMID 20388734). Generalizability to mammals requires RPE1 validation in Phase 2.
 
 C. elegans: complete cell lineage known (Sulston & Horvitz 1977). Centriole pedigree of each cell → its fate. Embryo is transparent. All divisions visible.
 
@@ -176,7 +176,8 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 | 8 | Magescas et al. (2023) — SAS-1 loss initiates elimination | 37987153 |
 | 9 | Coffman et al. (2016) — MT asymmetry C. elegans | 27733624 |
 | 10 | Croisier et al. (2025) — EM centrioles in rectal cells | 40475707 |
-| 11 | Januschke et al. (2011) — Drosophila NB centrosome | 21407209 |
+| 11 | Januschke et al. (2011) — Drosophila NB: DAUGHTER centriole→stem cell, MOTHER→differentiating (context-dependent, opposite of mGSC) | 21407209 |
+| 16 | **Conduit & Raff (2010)** — Cnn dynamics drive centrosome asymmetry in Drosophila NB, Curr Biol | 21145745 |
 | 14 | Bei et al. (2002) — SRC-1 + Wnt control cleavage orientation in C. elegans, Dev Cell | 12110172 |
 | 15 | **Targeted mother centrosome localization in CD8+ T-cells promotes memory formation (2025)** — direct evidence of centriole→fate in mammals, Cell Rep | 39764850 |
 | 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
@@ -184,4 +185,4 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 
 ---
 
-*Version 12.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
+*Version 13.0 — English. From molecular causality to informational prediction. Jaba Tqemaladze, 2026-07-22.*
