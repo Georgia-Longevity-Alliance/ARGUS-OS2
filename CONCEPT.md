@@ -268,3 +268,27 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Reagents/Equip | $15K | +$12K | +$18K | +$12K | +$18K | **$75K** |
 | Contingency | $2K | +$3K | +$2K | +$3K | +$4K | **$14K** |
 | **Total** | **$52K** | **$25K** | **$35K** | **$25K** | **$40K** | **$177K** |
+
+### E5: Heidenhain's Iron Haematoxylin — Endpoint Validation of Zombie Centrioles ($15K)
+**Rationale:** Boveri's 1900 method (Scheer 2014, PMID 25047623). Iron haematoxylin stains centriole microtubules directly — NOT dependent on GFP fluorescence. Critical for OS2: verifies that SAS-4-GFP(+) SPD-2-mCherry(-) "zombie" centrioles ARE structurally intact centrioles, not protein aggregates.
+
+**Protocol:**
+1. After 100-cell stage imaging → fix embryos
+2. Heidenhain's iron haematoxylin staining (2.5% iron-alum mordant, 0.5% haematoxylin, differentiation under microscope)
+3. Compare GFP(+) structures vs iron-stained structures in same embryo
+4. **Key metric:** fraction of "zombie" centrioles (SAS-4+/SPD-2-) that are iron-positive → true centrioles vs aggregates
+
+**N:** 30 embryos | **Duration:** 3 weeks | **Budget:** $15,000
+
+| Item | Cost |
+|------|:---:|
+| Reagents (iron-alum, haematoxylin, Bouin's) | $2,000 |
+| Microscopy time (brightfield + fluorescence overlay) | $5,000 |
+| Personnel (histology + analysis) | $6,000 |
+| Contingency | $2,000 |
+
+### Updated Full Budget
+
+| Component | Base | +E1 | +E2 | +E3 | +E4 | +E5 | **Full** |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Total** | $52K | $25K | $35K | $25K | $40K | $15K | **$192K** |
