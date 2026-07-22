@@ -74,6 +74,7 @@ ARGUS-OS2 tests whether **centriole pedigree** (sequence of division orientation
 **Rationale:** Ablate one centrosome at mitosis. The daughter cell inheriting the REMAINING centrosome has a forced pedigree. Compare fate to unablated controls.
 
 **Method:** 405nm pulsed laser, prophase ablation, track 3 generations.
+**p38 control:** SB203580 (10μM) added to ablated cells to block stress-induced G1 arrest (Uetake et al. 2007, PMID 17227892). Sham ablation (cytoplasm only) as negative control.
 
 **N:** 50 ablations | **Budget:** $35,000
 
@@ -123,6 +124,7 @@ ARGUS-OS2 tests whether **centriole pedigree** (sequence of division orientation
 | 7 | Kalbfuss & Gönczy (2023) — 88% elimination C. elegans | 37256957 |
 | 8 | Hodges et al. (2010) — centriole evolution, J Cell Sci | 20388734 |
 | 9 | Sulston et al. (1983) — C. elegans lineage | 6684600 |
+| 11 | **Loncarek & Bettencourt-Dias (2020)** — centriole maturation over 3 cell cycles, Cells | 32526902 |
 | 10 | Bei et al. (2002) — Wnt/SRC-1 orientation, Dev Cell | 12110172 |
 
 ---
