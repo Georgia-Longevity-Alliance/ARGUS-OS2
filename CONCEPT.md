@@ -181,6 +181,9 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 | 15 | **Targeted mother centrosome localization in CD8+ T-cells promotes memory formation (2025)** — direct evidence of centriole→fate in mammals, Cell Rep | 39764850 |
 | 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
 | 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
+| 17 | **Rebollo et al. (2007)** — functionally unequal centrosomes in Drosophila, Dev Cell | 17336911 |
+| 18 | **Viol et al. (2020)** — Nek2 kinase displaces distal appendages, J Cell Biol | 32211891 |
+| 19 | **Tqemaladze (2022)** — centriole accumulation in stem cell aging, Mol Biol Rep | 36583780 |
 
 ---
 
@@ -271,6 +274,9 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 
 ### E5: Heidenhain's Iron Haematoxylin — Endpoint Validation of Zombie Centrioles ($15K)
 **Rationale:** Boveri's 1900 method (Scheer 2014, PMID 25047623). Iron haematoxylin stains centriole microtubules directly — NOT dependent on GFP fluorescence. Critical for OS2: verifies that SAS-4-GFP(+) SPD-2-mCherry(-) "zombie" centrioles ARE structurally intact centrioles, not protein aggregates.
+| 20 | **Rebollo et al. (2007)** — functionally unequal centrosomes in Drosophila neural stem cells, Dev Cell | 17336911 |
+| 21 | **Viol et al. (2020)** — Nek2 kinase displaces distal appendages from mother centriole, J Cell Biol | 32211891 |
+| 22 | **Tqemaladze (2022)** — centriole accumulation in stem cell aging, Mol Biol Rep | 36583780 |
 
 **Protocol:**
 1. After 100-cell stage imaging → fix embryos
