@@ -139,3 +139,74 @@ ARGUS-OS2 tests whether **centriole pedigree** (sequence of division orientation
 ---
 
 *Version 22.0 — RPE1-primary, causality-integrated. Target: 90+. Jaba Tqemaladze, 2026-07-22.*
+
+---
+
+## 9. Controls
+
+| Control | Type | Method |
+|---------|:---:|--------|
+| Ninein-KD | **Positive** | Randomizes mother centriole inheritance. If pedigree→fate disappears in KD, ninein-dependent mechanism confirmed. |
+| Centrin1-only (no Ninein) | **Negative** | Cells without mother centriole marker. Pedigree tracking impossible → serves as technical baseline. |
+| Unablated RPE1 | **Negative** | Sham control for laser ablation. Same imaging conditions, no ablation. |
+
+## 10. Blind Protocol
+
+AI tracks centrioles and computes spindle vectors. **Pedigree computation DELAYED** until human classifies cell fate from final frame. Two independent classifiers. Cohen's Kappa ≥ 0.85 required.
+
+## 11. Go/No-Go Criteria
+
+| Checkpoint | Criterion | Action |
+|------------|-----------|--------|
+| Pilot (first 200 cells) | Tracking accuracy <85% | Optimize algorithm before continuing |
+| Mid-experiment (500 cells) | I(pedigree; fate) < 0.1 bits | Re-evaluate hypothesis; publish negative |
+| Ninein-KD | Effect size in KD <50% of WT | Ninein-independent mechanism → revise model |
+
+## 12. Exclusion Criteria
+
+- Cells with <3 tracked generations
+- Mitotic errors (multipolar spindles, lagging chromosomes)
+- Phototoxicity score >10% (division delay >2 SD from mean)
+- Apoptotic cells (Annexin-V positive)
+
+## 13. Statistical Model
+
+**Primary:** Bayesian hierarchical model with `brms`:
+```
+fate ~ pedigree_score + age + position + (1|cell_lineage)
+```
+**Priors:** Student-t(3, 0, 2.5) for fixed effects. **BF>10** for H₁.
+
+**Secondary:** Mixed-effects Cox survival for time-to-cilium-formation.
+
+**ICC reporting:** Intra-class correlation for lineage random effect reported.
+
+**Intermediate analysis:** After 500 cells. If BF<3 → continue to 1000. If BF>10 → stop early.
+
+## 14. Limitations
+
+1. RPE1 is immortalized — not embryonic. Cilium formation is a surrogate for "fate."
+2. C. elegans pilot is for method validation only — not statistically powered.
+3. Laser ablation may cause nonspecific damage. Sham controls mitigate.
+4. Correlation ≠ causality. Ninein-KD + ablation provide mechanistic support, but definitive proof requires centriole transplantation (OS3).
+5. 5-generation pedigrees may be truncated by cell division asynchrony.
+6. Ciliogenesis as fate readout: some RPE1 form cilia stochastically. Baseline rate must be established.
+
+## 15. Composite Fate Marker
+
+**Primary outcome:** cilium-positive (Arl13B+) AND non-proliferative (Ki67−) = "differentiated fate." Proliferative (Ki67+) = "undifferentiated."
+
+**Secondary:** EMT markers (E-cadherin loss, vimentin gain).
+
+## 16. Data Availability
+
+- Raw microscopy: BioImage Archive
+- Processed pedigrees: Zenodo
+- Analysis code: GitHub (Apache 2.0)
+- Pre-registration: OSF
+
+## 17. Temperature and Environmental Control
+
+- 37°C, 5% CO₂, humidified incubator
+- Imaging: stage-top incubator (Tokai Hit)
+- Light-sheet not required — spinning disk confocal with low-intensity 488/561nm
