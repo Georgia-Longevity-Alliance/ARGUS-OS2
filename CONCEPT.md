@@ -205,7 +205,7 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 
 These experiments transform OS2 from pure correlation analysis to mechanistic causality testing.
 
-### E1: Wnt Perturbation — Change Pedigree, Measure Fate ($25K)
+### E1: Wnt Perturbation — Change Pedigree, Measure Fate ($25K) [MANDATORY — included in core]
 **Rationale:** Bei et al. (2002) showed Wnt/SRC-1 controls cleavage orientation in C. elegans. If we perturb Wnt signaling (RNAi or temperature-sensitive mutants), we CHANGE the pedigree WITHOUT changing cell position. If fate follows the NEW pedigree → causality supported.
 - **Strains:** Wnt pathway mutants (mom-2, wrm-1) or RNAi
 - **N:** 20 embryos per condition × 3 conditions = 60 embryos
@@ -292,6 +292,10 @@ These experiments transform OS2 from pure correlation analysis to mechanistic ca
 | Component | Base | +E1 | +E2 | +E3 | +E4 | +E5 | **Full** |
 |-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Total** | $52K | $25K | $35K | $25K | $40K | $15K | **$192K** |
+
+### E7: Proteasome Inhibition — Block Elimination, Track Pedigree ($20K)
+**Rationale:** If centriole elimination is proteasome-dependent (Pierron 2023), blocking proteasomes should extend centriole lifespan. This creates MORE cells with tracked pedigrees — directly addressing the 88% elimination problem. MG132 or bortezomib treatment on 30 embryos.
+**N:** 30 embryos × 2 conditions | **Duration:** 4 weeks | **Budget:** $20,000
 
 ### E6: Planaria — Centriole Fate During Regeneration ($30K)
 **Rationale:** Planarians regenerate entire body from tiny fragments via neoblasts (pluripotent stem cells). Unlike C. elegans (deterministic lineage, 88% centriole elimination), planarians RETAIN centrioles in stem cells and differentiated cells. If centriole pedigree carries fate information, regenerating planarians should show pedigree→fate correlation during blastema formation.
