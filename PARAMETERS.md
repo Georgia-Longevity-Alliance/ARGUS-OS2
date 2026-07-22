@@ -1,6 +1,6 @@
 # PARAMETERS — ARGUS-OS2
 
-**Version:** 5.0 — Synchronised with CONCEPT v4.1
+**Version:** 22.0 — Synchronised with CONCEPT v4.1
 **Date:** 2026-07-21
 
 ## Hypothesis
