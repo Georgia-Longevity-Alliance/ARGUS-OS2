@@ -183,6 +183,8 @@ Even if I(pedigree; fate) > 0.5 bits, this demonstrates PREDICTIVE power, not ca
 | 15 | **Targeted mother centrosome localization in CD8+ T-cells promotes memory formation (2025)** — direct evidence of centriole→fate in mammals, Cell Rep | 39764850 |
 | 13 | Hodges et al. (2010) — evolutionary history of centriole, J Cell Sci | 20388734 |
 | 12 | Pintard & Bowerman (2019) — mitotic division C. elegans | 30626640 |
+| 23 | **Balestra, von Tobel & Gönczy (2015)** — paternal centrioles persist 10 generations in C. elegans, Cell Res | 25906994 |
+| 24 | **Sugioka et al. (2017)** — SAS-7 acts upstream of SPD-2 in centriole assembly, eLife | 28092264 |
 | 17 | **Rebollo et al. (2007)** — functionally unequal centrosomes in Drosophila, Dev Cell | 17336911 |
 | 18 | **Viol et al. (2020)** — Nek2 kinase displaces distal appendages, J Cell Biol | 32211891 |
 | 19 | **Tqemaladze (2022)** — centriole accumulation in stem cell aging, Mol Biol Rep | 36583780 |
