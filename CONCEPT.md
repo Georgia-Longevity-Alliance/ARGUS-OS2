@@ -210,3 +210,15 @@ fate ~ pedigree_score + age + position + (1|cell_lineage)
 - 37°C, 5% CO₂, humidified incubator
 - Imaging: stage-top incubator (Tokai Hit)
 - Light-sheet not required — spinning disk confocal with low-intensity 488/561nm
+
+## 18. Competing Risks
+
+Fine-Gray model for competing events: (1) apoptosis (Annexin-V+), (2) senescence (p21+), (3) technical loss (phototoxicity). Primary event: cilium formation.
+
+## 19. Time-Since-Last-Division Covariate
+
+Cells that divided recently may not have formed cilia yet — independent of pedigree. `time_since_last_division` included as continuous covariate in all models.
+
+## 20. Note on Sister-Pair Analysis
+
+Sister-pair comparison (OS1 design) applies to C. elegans invariant lineage. In RPE1, divisions are stochastic — paired analysis replaced by pedigree-stratified within-lineage comparison. This is accounted for in the Bayesian hierarchical model with `(1|cell_lineage)` random effect.
