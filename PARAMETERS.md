@@ -20,4 +20,4 @@ Centriole pedigreey of centriole divisions (∥/⟂ sequence) predicts cell fate
 
 ## Budget
 
-~$105,000. Data from OS1. No additional markers.
+~$334,000. Data from OS1. No additional markers.

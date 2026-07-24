@@ -1,5 +1,7 @@
 # CONCEPT — ARGUS-OS2
 **Version:** 22.0
+
+**Type:** analysis only — see CONCEPT.md for details.
 **Date:** 2026-07-22
 **Idea:** Jaba Tqemaladze — Centriole pedigree as predictor of cell fate
 
@@ -112,6 +114,19 @@ ARGUS-OS2 tests whether **centriole pedigree** (sequence of division orientation
 
 ---
 
+
+
+## Consumables (annual)
+
+| **C. elegans maintenance** (NGM agar, OP50/NA22 bacteria, cholesterol, Petri dishes) | **$3,500** |
+| **RNAi/strain maintenance** (clones, IPTG, antibiotics, feeding plates) | **$2,000** |
+| **Cell culture** (DMEM/RPMI, FBS, pen/strep, trypsin, plastics) | **$8,000** |
+| **CO₂ gas + incubator supplies** (cylinders, rental, HEPA filters) | **$3,000** |
+| **Transfection reagents** (Lipofectamine, siRNA oligos) | **$3,000** |
+| **Sequencing consumables** (library prep, flow cells) | **$12,000** |
+| **Microscopy** (immersion oil, coverslips, lens cleaning) | **$2,000** |
+| **Glove-box/Enclosure** (HEPA H13 filters, UV-C lamps, gloves, seals, N₂ gas) | **$8,000** |
+| **Office consumables** (printing, stationery) | **$500** |
 ## 7. Key References
 
 | # | Reference | PMID |
@@ -226,3 +241,8 @@ Cells that divided recently may not have formed cilia yet — independent of ped
 ## 20. Note on Sister-Pair Analysis
 
 Sister-pair comparison (OS1 design) applies to C. elegans invariant lineage. In RPE1, divisions are stochastic — paired analysis replaced by pedigree-stratified within-lineage comparison. This is accounted for in the Bayesian hierarchical model with `(1|cell_lineage)` random effect.
+
+
+## References
+
+*See project MEMORY.md for reference history.*
