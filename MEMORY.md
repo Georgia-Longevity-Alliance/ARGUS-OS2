@@ -1,3 +1,8 @@
 # MEMORY — ARGUS-OS2
-## 2026-07-22: v5.0 English translation
-All core files translated to English. Concept: centriole pedigree convergence. Real PMIDs added.
+
+**Created:** 2026-07-29
+**Parent:** Marketing (ARGUS)
+
+## 2026-07-29 — Autofix
+- MEMORY.md populated (was 160 bytes)
+- ARGUS-OS2 is the V7/V8 advanced version of ARGUS microscope
