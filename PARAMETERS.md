@@ -11,7 +11,7 @@ Centriole pedigreey of centriole divisions (∥/⟂ sequence) predicts cell fate
 
 | Phase | System | N | Endpoint |
 |:---:|--------|:---:|----------|
-| 1 | C. elegans | 100 cells | Known lineage → fate |
+| 1 | Transparent embryo | 100 cells | Known lineage → fate |
 | 2 | RPE1 (data from OS1) | 200+ cells | Centriole pedigreey → Arl13B |
 
 ## Main Experiment
